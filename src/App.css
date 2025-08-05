@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f0f8f0;
+  color: #222;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f0f8f0;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 48px 8vw 32px 8vw;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 32px 4vw 24px 4vw;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 24px 2vw 16px 2vw;
+  }
+}
+
+/* Ẩn style cũ */
+.header, .menu { display: none; }
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.header h1 {
+  color: #ff9800;
+  margin-bottom: 8px;
+}
+.header p {
+  color: #757575;
+}
+
+.menu h2 {
+  color: #ffb347;
+  margin-top: 24px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffe0b2;
+  display: flex;
+  justify-content: space-between;
+}
+.menu span {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.contact {
+  margin-top: 40px;
+  text-align: center;
+  color: #616161;
+}
+.contact h3 {
+  color: #ff9800;
+  margin-bottom: 8px;
+} 
