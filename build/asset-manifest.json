@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e8da0b0.css",
+    "main.js": "/static/js/main.a5306b6a.js",
+    "static/media/bgtiemtra.jpg": "/static/media/bgtiemtra.caec9fbe5363cc7604e6.jpg",
+    "static/media/logo.png": "/static/media/logo.d559cfb80245363b1b89.png",
+    "index.html": "/index.html",
+    "main.9e8da0b0.css.map": "/static/css/main.9e8da0b0.css.map",
+    "main.a5306b6a.js.map": "/static/js/main.a5306b6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e8da0b0.css",
+    "static/js/main.a5306b6a.js"
+  ]
+}

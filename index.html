@@ -5,192 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🍵 Tiệm Trà Nhà Bưởi - Tea Shop</title>
     <meta name="description" content="Website giới thiệu tiệm trà truyền thống với giao diện đẹp mắt và hiện đại">
-    <meta name="keywords" content="tiệm trà, trà truyền thống, tea shop, trà nhà bưởi">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/src/asset/logo.png">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="🍵 Tiệm Trà Nhà Bưởi - Tea Shop">
-    <meta property="og:description" content="Website giới thiệu tiệm trà truyền thống với giao diện đẹp mắt và hiện đại">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tiemtranhabuoi.com">
-    
-    <!-- CSS -->
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         
-        .container {
+        .loading {
             text-align: center;
             background: white;
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 2rem;
-        }
-        
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 2rem;
-            background: #8B4513;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-        }
-        
-        h1 {
-            color: #8B4513;
-            margin-bottom: 1rem;
-            font-size: 2.5rem;
-        }
-        
-        .subtitle {
-            color: #666;
-            margin-bottom: 2rem;
-            font-size: 1.2rem;
-        }
-        
-        .description {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-        
-        .cta-button {
-            background: linear-gradient(45deg, #8B4513, #A0522D);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(139, 69, 19, 0.3);
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        
-        .feature {
-            background: #f8f9fa;
-            padding: 1rem;
+            padding: 2rem;
             border-radius: 10px;
-            border-left: 4px solid #8B4513;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
-        .feature h3 {
-            color: #8B4513;
-            margin-bottom: 0.5rem;
+        .tea-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
         
-        .footer {
-            margin-top: 2rem;
-            color: #888;
-            font-size: 0.9rem;
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #8B4513;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 1rem auto;
         }
         
-        @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 2rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">🍵</div>
-        
-        <h1>Tiệm Trà Nhà Bưởi</h1>
-        <p class="subtitle">Tea Shop Website</p>
-        
-        <p class="description">
-            Chào mừng bạn đến với website giới thiệu tiệm trà truyền thống của chúng tôi. 
-            Khám phá các loại trà thượng hạng và dịch vụ chất lượng cao.
-        </p>
-        
-        <div class="features">
-            <div class="feature">
-                <h3>🌿 Trà Truyền Thống</h3>
-                <p>Hương vị đích thực của trà Việt Nam</p>
-            </div>
-            <div class="feature">
-                <h3>🎨 Giao Diện Đẹp</h3>
-                <p>Thiết kế hiện đại, responsive</p>
-            </div>
-            <div class="feature">
-                <h3>📱 Tương Thích Mọi Thiết Bị</h3>
-                <p>Trải nghiệm tốt trên mọi màn hình</p>
-            </div>
-        </div>
-        
-        <a href="#" onclick="loadReactApp()" class="cta-button">Khám Phá Ngay</a>
-        
-        <div class="footer">
-            <p>© 2024 Tiệm Trà Nhà Bưởi. Được xây dựng với ❤️ và React.js</p>
-        </div>
+    <div class="loading">
+        <div class="tea-icon">🍵</div>
+        <h2>Tiệm Trà Nhà Bưởi</h2>
+        <p>Đang tải website...</p>
+        <div class="spinner"></div>
     </div>
-    
-    <!-- Load React app content -->
+
     <script>
-        function loadReactApp() {
-            // Hide landing page
-            document.querySelector('.container').style.display = 'none';
-            
-            // Create iframe to load React app
-            const iframe = document.createElement('iframe');
-            iframe.src = './public/index.html';
-            iframe.style.width = '100%';
-            iframe.style.height = '100vh';
-            iframe.style.border = 'none';
-            iframe.style.position = 'fixed';
-            iframe.style.top = '0';
-            iframe.style.left = '0';
-            iframe.style.zIndex = '1000';
-            
-            document.body.appendChild(iframe);
-        }
-        
-        // Auto redirect after 5 seconds
-        setTimeout(function() {
-            loadReactApp();
-        }, 5000);
+        // Redirect to React app immediately
+        window.location.href = './public/index.html';
     </script>
 </body>
 </html>
