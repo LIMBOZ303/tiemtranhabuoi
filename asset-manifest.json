@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tiemtranhabuoi/static/css/main.3a1702c1.css",
+    "main.js": "/tiemtranhabuoi/static/js/main.13a8799d.js",
+    "static/media/bgtiemtra.jpg": "/tiemtranhabuoi/static/media/bgtiemtra.caec9fbe5363cc7604e6.jpg",
+    "static/media/logo.png": "/tiemtranhabuoi/static/media/logo.d559cfb80245363b1b89.png",
+    "index.html": "/tiemtranhabuoi/index.html",
+    "main.3a1702c1.css.map": "/tiemtranhabuoi/static/css/main.3a1702c1.css.map",
+    "main.13a8799d.js.map": "/tiemtranhabuoi/static/js/main.13a8799d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a1702c1.css",
+    "static/js/main.13a8799d.js"
+  ]
+}
