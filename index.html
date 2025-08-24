@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍵 Tiệm Trà Nhà Bưởi - Tea Shop</title>
+    <meta name="description" content="Website giới thiệu tiệm trà truyền thống với giao diện đẹp mắt và hiện đại">
+    <meta name="keywords" content="tiệm trà, trà truyền thống, tea shop, trà nhà bưởi">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/src/asset/logo.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="🍵 Tiệm Trà Nhà Bưởi - Tea Shop">
+    <meta property="og:description" content="Website giới thiệu tiệm trà truyền thống với giao diện đẹp mắt và hiện đại">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tiemtranhabuoi.com">
+    
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: #8B4513;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        
+        h1 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+        
+        .description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #8B4513, #A0522D);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(139, 69, 19, 0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #8B4513;
+        }
+        
+        .feature h3 {
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🍵</div>
+        
+        <h1>Tiệm Trà Nhà Bưởi</h1>
+        <p class="subtitle">Tea Shop Website</p>
+        
+        <p class="description">
+            Chào mừng bạn đến với website giới thiệu tiệm trà truyền thống của chúng tôi. 
+            Khám phá các loại trà thượng hạng và dịch vụ chất lượng cao.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🌿 Trà Truyền Thống</h3>
+                <p>Hương vị đích thực của trà Việt Nam</p>
+            </div>
+            <div class="feature">
+                <h3>🎨 Giao Diện Đẹp</h3>
+                <p>Thiết kế hiện đại, responsive</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Tương Thích Mọi Thiết Bị</h3>
+                <p>Trải nghiệm tốt trên mọi màn hình</p>
+            </div>
+        </div>
+        
+        <a href="/public/index.html" class="cta-button">Khám Phá Ngay</a>
+        
+        <div class="footer">
+            <p>© 2024 Tiệm Trà Nhà Bưởi. Được xây dựng với ❤️ và React.js</p>
+        </div>
+    </div>
+    
+    <!-- Redirect to React app after 3 seconds -->
+    <script>
+        setTimeout(function() {
+            window.location.href = '/public/index.html';
+        }, 3000);
+    </script>
+</body>
+</html>
