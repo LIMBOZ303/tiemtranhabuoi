@@ -160,18 +160,37 @@
             </div>
         </div>
         
-        <a href="/public/index.html" class="cta-button">Khám Phá Ngay</a>
+        <a href="#" onclick="loadReactApp()" class="cta-button">Khám Phá Ngay</a>
         
         <div class="footer">
             <p>© 2024 Tiệm Trà Nhà Bưởi. Được xây dựng với ❤️ và React.js</p>
         </div>
     </div>
     
-    <!-- Redirect to React app after 3 seconds -->
+    <!-- Load React app content -->
     <script>
+        function loadReactApp() {
+            // Hide landing page
+            document.querySelector('.container').style.display = 'none';
+            
+            // Create iframe to load React app
+            const iframe = document.createElement('iframe');
+            iframe.src = './public/index.html';
+            iframe.style.width = '100%';
+            iframe.style.height = '100vh';
+            iframe.style.border = 'none';
+            iframe.style.position = 'fixed';
+            iframe.style.top = '0';
+            iframe.style.left = '0';
+            iframe.style.zIndex = '1000';
+            
+            document.body.appendChild(iframe);
+        }
+        
+        // Auto redirect after 5 seconds
         setTimeout(function() {
-            window.location.href = '/public/index.html';
-        }, 3000);
+            loadReactApp();
+        }, 5000);
     </script>
 </body>
 </html>
